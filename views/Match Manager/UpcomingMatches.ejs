@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/upcomingmatches.css">
+        <title>Upcoming Matches</title>
+    </head>
+    <body>
+        <header>
+            <h4>Football Club</h4>
+           <nav>
+               <ul>
+                   <li>
+                       <a id="one" href="/Match_Manager">Profile</a>
+                   </li>
+                   <li>
+                    <a id="two" href="/Match_Manager/UpcomingMatches">Matches To be Organised</a>
+                   </li>
+                   <li>
+                    <a id="three" href="/Match_Manager/MatchHistory">Organised Matches</a>
+                   </li>
+               </ul>
+           </nav>
+       </header>
+       <table id="hist">
+        <thead>
+          <tr>
+              <th>Match No.</th>
+              <th>Date of Match</th>
+              <th>Ground Name</th>
+              <th>City</th>
+              <th>Participating Teams</th>
+              <th>Sponsors for this Match</th>
+          </tr>
+       </thead>
+       <tbody>
+           <% for(var i=0; i < o1.length; i++) { %>
+              <tr id="tohover">
+                <td><%= o1[i].MATCH_ID %></td>
+                <td><%= o1[i].DATE_OF_MATCH %></td>
+                <td><%= o1[i].GROUND %></td>
+                <td><%= o1[i].CITY %></td>
+                <td><%= o1[i].TEAM %></td>
+                <td><%= o1[i].SPONSOR_NAME %></td>
+              </tr>
+           <% } %>
+       </tbody>
+       </table>
+    </body>
+</html>
