@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Football Club</title>
+    <link rel="stylesheet" type="text/css" href="css/Login.css">
+</head>
+<body class="main">
+<div id="whole">
+    <div class="Design">
+        <img class="login_theme"src="pictures/theme.png" alt="Error loading the image">
+    </div>
+    <div class="Login">
+       <h3 class="Login_Box_Heading">Login</h3>
+       <div class="line_div">
+       <hr class="line">
+      </div>
+      <div class="spacing">
+
+      </div>
+       <form id="User_details" method="POST" action="/login"> 
+         <div class="U">
+           <label for="User" id="Username_Label">Username</label>
+           <input class="Username" type="text" name="User" placeholder="Enter your Username" required>
+        </div>
+        <div class="U">
+           <label for="Password" id="Password_Label">Password</label>
+           <input class="Password" type="password" name="Password" placeholder="Enter your Password" autocomplete="email" required>
+        </div>
+        <div class="U">
+           <label for="Occupation" id="Occupation_Label">Occupation</label>
+           <select class="Occupation" type="text" name="Occupation" required>
+              <option value="" disabled selected hidden>Choose your Occupation</option>
+              <option value="Player">Player</option>
+              <option value="Coach">Coach</option>
+              <option value="Seasons Manager">Seasons Manager</option>
+              <option value="Match Manager">Match Manager</option>
+              <option value="DBA">DBA</option>
+           </select>
+        </div>  
+        <div>
+        <button type="submit" class="submit_button" required>Log in</button>
+        </div>
+       </form>
+    </div>
+</div> 
+</body>
+</html>

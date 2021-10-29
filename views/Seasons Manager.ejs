@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/matchhistory.css">
+        <link rel="stylesheet" type="text/css" href="css/player.css">
+        <title>Player Page</title>
+    </head>
+    <body>
+        <header>
+            <h4>Football Club</h4>
+           <nav>
+               <ul>
+                   <li>
+                       <a id="one" href="/Seasons_Manager">Profile</a>
+                   </li>
+                   <li>
+                       <a id="two" href="/Seasons_Manager/UpcomingSeasons">Upcoming Seasons</a>
+                   </li>
+                   <li>
+                       <a id="three" href="/Seasons_Manager/SeasonHistory">Seasons History</a>
+                   </li>
+                   <li>
+                       <a id="four" href="/Seasons_Manager/OngoingSeasons">Ongoing Seasons</a>
+                   </li>
+               </ul>
+           </nav>
+       </header>
+    </body>
+    <label for="details" class="C"><u><strong><i>Your Profile</i></strong></u></label>
+    <div class="details">
+        <div class="personaldetails" id="A">
+            <h5>Username : <%=USERNAME%></h5>
+            <h5>IDs : <%=EMPLOYEE_ID%></h5>
+        </div>
+        <div class="personaldetails" id="B">
+          <div>
+            <label id="name_label" for="name">Full Name :</label>
+            <h5 class="name" name="name"><%=NAME%></h5>
+         </div>
+         <div>
+            <label id="dob_label" for="dob">Date of Birth :</label>
+            <h5 class="dob" name="dob"><%=DOB%></h5>
+         </div>
+         <div>
+            <label id="clubpts_label" for="clubpts">Club Points :</label>
+            <h5 class="clubpts" name="clubpts"><%=CLUBPTS%></h5>
+         </div>
+         <div>
+             <label id="mobile_label" for="mobile">Mobile Numbers :</label>
+             <h5 name='mobile'><%=MOBILENO%></h5>
+            </div>
+            <div>
+             <h5 name='email'>Email IDs : <%=EMAIL_ID%></h5>
+            </div>
+        </div>
+    </div>
+</html>

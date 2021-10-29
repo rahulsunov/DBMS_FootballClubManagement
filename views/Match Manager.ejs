@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/upcomingmatches.css">
+        <link rel="stylesheet" type="text/css" href="css/player.css">
+        <title>Upcoming Matches</title>
+    </head>
+    <body>
+        <header>
+            <h4>Football Club</h4>
+           <nav>
+               <ul>
+                   <li>
+                       <a id="one" href="/Match_Manager">Profile</a>
+                   </li>
+                   <li>
+                       <a id="two" href="/Match_Manager/UpcomingMatches">Matches To be Organised</a>
+                   </li>
+                   <li>
+                       <a id="three" href="/Match_Manager/MatchHistory">Organised Matches</a>
+                   </li>
+               </ul>
+           </nav>
+       </header>
+       <label for="details" class="C"><u><strong><i>Your Profile</i></strong></u></label>
+       <div class="details">
+        <div class="personaldetails" id="A">
+            <h5>Username : <%=USERNAME%></h5>
+            <h5>ID : <%=EMPLOYEE_ID%></h5>
+        </div>
+        <div class="personaldetails" id="B">
+          <div>
+            <label id="name_label" for="name">Full Name :</label>
+            <h5 class="name" name="name"><%=NAME%></h5>
+         </div>
+         <div>
+            <label id="dob_label" for="dob">Date of Birth :</label>
+            <h5 class="dob" name="dob"><%=DOB%></h5>
+         </div>
+         <div>
+            <label id="clubpts_label" for="clubpts">Club Points :</label>
+            <h5 class="clubpts" name="clubpts"><%=CLUBPTS%></h5>
+         </div>
+         <div>
+             <label id="mobile_label" for="mobile">Mobile Numbers :</label>
+             <h5 name='mobile'><%=MOBILENO%></h5>
+            </div>
+            <div>
+             <h5 name='email'>Email IDs : <%=EMAIL_ID%></h5>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
