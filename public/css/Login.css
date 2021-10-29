@@ -1,0 +1,145 @@
+.main
+{
+  background-color:rgb(223, 223, 226) ;
+}
+.Design
+{
+    flex: 50%;
+    width:50px;
+    background-color: whitesmoke;
+    justify-content: center;
+    display: flex;
+}
+#whole
+{
+    display:flex;
+    border: 1.5px outset rgb(10, 10, 10);
+    border-color: #2196f3;
+    width: 750px;
+    left:11%;
+    height: 450px;
+    border-radius:1%;
+    margin: auto;
+    margin-top: 3%;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px blueviolet;
+    
+}
+.Login
+{
+    
+    width: 350px;
+    height:600px;
+    position:static;
+    right: 200px;
+    top: 90px;
+    text-align: center;
+    border-radius: 8px;
+    background-image: linear-gradient(rgb(120, 195, 233),rgb(142, 233, 216),whitesmoke);
+    
+}
+
+.line {
+    height: 0.1px;
+    width: 45%;
+    background-color: blue;
+    margin-top: -1px;
+    
+}
+.line_div
+{
+   margin-top:-22px;
+   
+}
+.spacing
+{
+    margin-top: 30px;
+}
+.submit_button
+{
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: #2196f3;
+    box-shadow: 0 0 10px #999;
+    outline: none;
+    width: 170px;
+
+}
+
+
+  .submit_button:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  }
+
+.Login_Box_Heading
+{
+    padding-bottom: 18px;
+}
+.Username
+{
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    height: 10px;
+    width: 200px;
+   
+}
+.Password
+{
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    color: black;
+    background-color: white;
+    box-shadow: 0 0 4px #999;
+    outline: none;
+    height: 10px;
+    width: 200px;
+}
+.Occupation
+{
+    border-radius: 2px;
+    height: 36px;
+    width: 240px;
+    font-size: 16px;
+    position: relative;
+    color:grey;
+}
+
+
+.U
+{
+    text-align: center;
+    padding-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Username_Label
+{
+    display: inline-block;
+    text-align: right;
+    
+}
+#Password_Label
+{
+    display: inline-block;
+    text-align: right;
+
+    
+}
+
+#Occupation_Label
+{
+    display: inline-block;
+    text-align: right;
+  
+}

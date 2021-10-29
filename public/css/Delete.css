@@ -1,0 +1,74 @@
+.execute,button
+{
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: #2196f3;
+    box-shadow: 0 0 10px #999;
+    outline: none;
+    width: 170px;
+
+}
+.execute:hover 
+{
+  background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+
+.add{
+  background: red radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+select,input{
+  border-radius: 4px;
+  height: 36px;
+  width: 250px;
+  font-size: 16px;
+}
+table {
+  border-collapse: collapse;
+}
+
+caption, th, td {
+  padding: .2em .8em;
+  border: 1px solid #fff;
+}
+
+caption {
+  background: #dbb768;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+th {
+  font-weight: bold;
+  background: #f3ce7d;
+}
+tr:hover {
+  background-color: #e9a106;
+}
+
+td {
+  background: #ffea97;
+}
+
+.buttons
+{
+  display: flex;
+  justify-content: center;
+  margin-top:40px;
+}
+
+.add{
+  display: inline-block;
+  margin: 0px 55px;
+  position: relative;
+}
+
+

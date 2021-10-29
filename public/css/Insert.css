@@ -1,0 +1,1356 @@
+header
+{
+    background-color:#55d6aa;
+}
+nav
+{
+    float: right;
+}
+header::after
+{
+    content: '';
+    display: table;
+    clear:both;
+}
+nav li
+{
+  display: inline-block;
+  margin: 0px 55px;
+  position: relative;
+}
+h4
+{
+    float: left;
+    margin: 10px 50px;
+    padding-top: 12px;
+}
+nav a:link
+{
+  color:white;
+  text-decoration: none;
+  
+}
+#one:visited,#two:visited,#three:visited,#four:visited,#five:visited,#six:visited
+{
+  color:black;
+  text-decoration: none;
+}
+#one:hover,#two:hover,#three:hover,#four:hover,#five:hover,#six:hover
+{
+    color: brown;
+}
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: relative;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+
+#Table_choice
+{
+    border-radius: 4px;
+    height: 36px;
+    width: 500px;
+    font-size: 16px;
+    position: relative;
+    left: 400px;
+    top: 50px;
+    color:black;
+}
+#Authorisation
+{
+  top:200px;
+  position: relative;
+}
+#Team_Name_Label
+{
+  bottom:100px;
+}
+.Username
+{
+  bottom: 100px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.mmid
+{
+  bottom: 0px;
+  top: 110px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.sid
+{
+  bottom: 0px;
+  top: 110px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.ssid
+{
+  bottom: 0px;
+  top: 110px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.S_Team
+{
+  bottom: 0px;
+  top: 170px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.match
+{
+  bottom: 0px;
+  top: 155px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.Password
+{
+  bottom: 75px;
+  left: 201px;
+  position: relative;
+  font-size: 16px;
+}
+
+.M_Team
+{
+  bottom: 0px;
+  top:155px;
+  left: 200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.Sp_Name
+{
+  bottom: 0px;
+  top:155px;
+  left: 200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.D_MedID
+{
+  bottom: 0px;
+  top:120px;
+  left: 200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.D_EqID
+{
+  bottom: 0px;
+  top:120px;
+  left: 200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.M_Ground_Name
+{
+  bottom: 0px;
+  top:180px;
+  left: 200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.S_Ground_Name
+{
+  bottom: 0px;
+  top:180px;
+  left: 200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.msid
+{
+  bottom: 0px;
+  top:115px;
+  left: 200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.Occupation
+{
+  bottom: 50px;
+  left: 200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.score
+{
+  bottom: 0px;
+  top: 200px;
+  left: 200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.execute
+{
+  position: fixed;
+  top: 460px;
+  left:550px;
+}
+
+.P
+{
+  left: 90px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.SSID
+{
+  left: 90px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.DMedID
+{
+  left: 90px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.DEqID
+{
+  left: 90px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+}
+
+.MGroundName
+{
+  left: 80px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.SGroundName
+{
+  left: 90px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+}
+
+.STeam
+{
+  left: 85px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.MTeam,.SID,.MSID
+{
+  left: 76px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.U,.MMID,.Match
+{
+  left: 90px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.SpName
+{
+  left: 55px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.O
+{
+  left: 79px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.Score
+{
+  left: 116px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.Team_Name
+{
+  bottom: 20px;
+  top: 85px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.Eq_ID
+{
+  bottom: 20px;
+  top: 85px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.Med_ID
+{
+  bottom: 20px;
+  top: 85px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.Wins
+{
+  bottom: 20px;
+  left:210px;
+  top: 100px;
+  position: relative;
+  font-size: 16px;
+}
+
+.E_Name
+{
+  bottom: 20px;
+  top: 100px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.Med_Name
+{
+  bottom: 20px;
+  top: 100px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.Losses
+{
+  bottom: 20px;
+  left:200px;
+  top: 115px;
+  position: relative;
+  font-size: 16px;
+}
+
+.O_Quantity
+{
+  bottom: 20px;
+  top: 120px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.Med_Pur
+{
+  bottom: 20px;
+  top: 120px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.Draws
+{
+  bottom: 20px;
+  top: 130px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.S_AQuantity
+{
+  bottom: 20px;
+  top: 145px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.M_AQuantity
+{
+  bottom: 20px;
+  top: 145px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.T
+{
+  left: 79px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.EqID
+{
+  left: 79px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.MedID
+{
+  left: 93px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.W
+{
+  left: 115px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.EName
+{
+  left: 58px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.MedName
+{
+  left: 70px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.L
+{
+  left: 115px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.OQuantity
+{
+  left: 58px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+.MedPur
+{
+  left: 58px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.D
+{
+  left: 115px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.SAQuantity
+{
+  left: 52px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.MAQuantity
+{
+  left: 52px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.EEmployee_ID
+{
+  bottom: 20px;
+  top: 85px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.EEmailID
+{
+  bottom: 20px;
+  top: 150px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.EEID
+{
+  left: 90px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.EmEmailID
+{
+  left: 115px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.MEmployee_ID
+{
+  
+  top: 80px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.EMobileNo
+{
+  bottom: 80px;
+  top: 150px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.MEmID
+{
+  left: 90px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.EmMobileNo
+{
+  left: 75px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.MCoach_ID
+{
+  bottom: 80px;
+  top: 100px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.CMobile_No
+{
+  bottom: 80px;
+  top: 150px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.MCID
+{
+  left: 110px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.CMobileNo
+{
+  left: 75px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.ECoach_ID
+{
+  bottom: 100px;
+  top: 100px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.CEmail_ID
+{
+  bottom: 80px;
+  top: 150px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.ECID
+{
+  left: 75px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.CEmailID
+{
+  left: 75px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.MPlayer_ID
+{
+  bottom: 120px;
+  top: 100px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.PMobile_No
+{
+  bottom: 80px;
+  top: 150px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.MPID
+{
+  left: 115px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.PMobileNo
+{
+  left: 75px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.EPlayer_ID
+{
+  bottom: 110px;
+  top: 100px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.PEmail_ID
+{
+  bottom: 80px;
+  top: 150px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.EPID
+{
+  left: 75px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.PEmailID
+{
+  left: 75px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.GroundName
+{
+  bottom: 100px;
+  top: 100px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.GCountry
+{
+  bottom: 90px;
+  top: 120px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.GState
+{
+  bottom: 70px;
+  top: 130px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.GCity
+{
+  bottom: 60px;
+  top: 140px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.Noofseats
+{
+  bottom: 50px;
+  top: 150px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.Ground_Name
+{
+  left: 100px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.Country
+{
+  left: 135px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.State
+{
+  left: 155px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.Ground
+{
+  left: 130px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.MWinner
+{
+  left: 90px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.dom
+{
+  left: 130px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.City
+{
+  left: 160px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.No_of_seats
+{
+  left: 82px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.CoachID,.PlayerID,.EmployeeID,.MatchID
+{
+  bottom: 0px;
+  top: 70px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.S_NO
+{
+  bottom: 0px;
+  top: 70px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.msno
+{
+  bottom: 0px;
+  top: 110px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.C_First_Name,.P_First_Name,.E_First_Name
+{
+  bottom: 0px;
+  top: 80px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.DOM
+{
+  bottom: 0px;
+  top: 80px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+
+
+.S_Name
+{
+  bottom: 0px;
+  top: 80px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.C_Middle_Name,.P_Middle_Name,.E_Middle_Name
+{
+  bottom: 0px;
+  top: 90px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.C_Last_Name,.P_Last_Name,.E_Last_Name
+{
+  bottom: 10px;
+  top: 100px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.M_Winner
+{
+  bottom: 0px;
+  top: 90px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.MGround
+{
+  bottom: 10px;
+  top: 100px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+
+.B_date
+{
+  bottom: 0px;
+  top: 90px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.E_date
+{
+  bottom: 10px;
+  top: 100px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.C_DOB,.P_DOB,.E_DOB
+{
+  bottom: 78px;
+  left:700px;
+  position: relative;
+  font-size: 16px;
+}
+
+.S_Winner
+{
+  bottom: 78px;
+  left:700px;
+  position: relative;
+  font-size: 16px;
+}
+
+.C_Team_Name
+{
+  bottom: 70px;
+  left:700px;
+  position: relative;
+  font-size: 16px;
+}
+
+.P_Team_Name
+{
+  bottom: 101px;
+  left:700px;
+  position: relative;
+  font-size: 16px;
+}
+
+.C_Clubpts
+{
+  bottom: 59px;
+  left:700px;
+  position: relative;
+  font-size: 16px;
+}
+
+.E_Occupation
+{
+  bottom: 0px;
+  top: 40px;
+  left:700px;
+  position: relative;
+  font-size: 16px;
+}
+
+.P_Clubpts,.E_Clubpts
+{
+  bottom: 91px;
+  left:700px;
+  position: relative;
+  font-size: 16px;
+}
+
+.position
+{
+  bottom: 0px;
+  top:75px;
+  left:700px;
+  position: relative;
+  font-size: 16px;
+}
+
+.Position
+{
+  left: 115px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.C_Username
+{
+  bottom: 48px;
+  left:700px;
+  position: relative;
+  font-size: 16px;
+}
+
+.P_Username,.E_Username
+{
+  bottom: 80px;
+  left:700px;
+  position: relative;
+  font-size: 16px;
+}
+
+.CID,.PID
+{
+  left: 82px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.SNO,.SWinner
+{
+  left: 82px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.MSNO
+{
+  left: 123px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+.meid
+{
+  bottom: 0px;
+  top: 125px;
+  left:200px;
+  position: relative;
+  font-size: 16px;
+}
+
+.MEID
+{
+  left: 57px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.MID
+{
+  left: 160px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.SName
+{
+  left: 97px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.Bdate
+{
+  left: 113px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.Edate
+{
+  left: 125px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.SEID
+{
+  left: 40px;
+  right: 50px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+.seid
+{
+  left:700px;
+  position: relative;
+}
+.EID
+{
+  left: 60px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.CFirstName,.PFirstName,.EFirstName
+{
+  left: 75px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.CMiddleName,.PMiddleName,.EMiddleName
+{
+  left: 60px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.EOccupation
+{
+  left: 95px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.CLastName,.PLastName,.ELastName
+{
+  left: 80px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.CDOB,.PDOB,.EDOB
+{
+  left: 82px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.CTeam_Name,.PTeam_Name
+{
+  left: 133px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.CClubpts,.PClubpts,.EClubpts
+{
+  left: 93px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.CUsername,.PUsername,.EUsername
+{
+  left: 104px;
+  position: relative;
+  border-radius: 2px;
+  height: 30px;
+  width: 240px;
+  font-size: 16px;
+}
+
+.A
+{
+ top: 40px;
+ position: relative;
+}
+
+.B
+{
+  top: 40px;
+  position: relative;
+}
+
+.execute
+{
+    border: none;
+    border-radius: 2px;
+    padding: 12px 18px;
+    font-size: 16px;
+    cursor: pointer;
+    color: white;
+    background-color: #2196f3;
+    box-shadow: 0 0 10px #999;
+    outline: none;
+    width: 170px;
+
+}
+
+
+  .execute:hover {
+    background: #47a7f5 radial-gradient(circle, transparent 1%, #47a7f5 1%) center/15000%;
+  }

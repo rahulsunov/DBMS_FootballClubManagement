@@ -1,0 +1,102 @@
+header
+{
+    background-color:#93ee2c;
+}
+nav
+{
+    float: right;
+}
+header::after
+{
+    content: '';
+    display: table;
+    clear:both;
+}
+nav li
+{
+  display: inline-block;
+  margin: 0px 55px;
+  position: relative;
+}
+h4
+{
+    float: left;
+    margin: 10px 50px;
+    padding-top: 12px;
+}
+nav a:link
+{
+  color:black;
+  text-decoration: none;
+  
+}
+#one:visited,#two:visited,#three:visited,#four:visited,#five:visited,#six:visited
+{
+  color:black;
+  text-decoration: none;
+}
+#one:hover,#two:hover,#three:hover,#four:hover,#five:hover,#six:hover
+{
+    color: brown;
+}
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: relative;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+
+table{
+  border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15)
+}
+tr{
+  
+  color: black;
+  text-align: left;
+}
+
+th,td {
+    padding: 12px 15px;
+}
+
+thead tr {
+  background-color: #ff6f69;
+  color: white;
+  
+}
+
+tbody tr {
+  border-bottom: 1px solid black;
+}
+
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+#tohover:hover {
+  background-color: #ffff99;
+}
+
+#hist {
+  margin-left: auto;
+  margin-right: auto;
+}

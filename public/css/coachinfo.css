@@ -1,0 +1,61 @@
+header
+{
+    background-color:#55d6aa;
+}
+nav
+{
+    float: right;
+}
+header::after
+{
+    content: '';
+    display: table;
+    clear:both;
+}
+nav li
+{
+  display: inline-block;
+  margin: 0px 55px;
+  position: relative;
+}
+h4
+{
+    float: left;
+    margin: 10px 50px;
+    padding-top: 12px;
+}
+nav a:link
+{
+  color:black;
+  text-decoration: none;
+  
+}
+#one:visited,#two:visited,#three:visited,#four:visited,#five:visited,#six:visited
+{
+  color:black;
+  text-decoration: none;
+}
+#one:hover,#two:hover,#three:hover,#four:hover,#five:hover,#six:hover
+{
+    color: brown;
+}
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: relative;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}

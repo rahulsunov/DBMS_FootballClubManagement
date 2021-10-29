@@ -1,0 +1,125 @@
+header
+{
+    background-color:#55d6aa;
+}
+nav
+{
+    float: right;
+}
+header::after
+{
+    content: '';
+    display: table;
+    clear:both;
+}
+nav li
+{
+  display: inline-block;
+  margin: 0px 55px;
+  position: relative;
+}
+h4
+{
+    float: left;
+    margin: 10px 50px;
+    padding-top: 12px;
+}
+nav a:link
+{
+  color:black;
+  text-decoration: none;
+  
+}
+#one:visited,#two:visited,#three:visited,#four:visited,#five:visited,#six:visited
+{
+  color:black;
+  text-decoration: none;
+}
+#one:hover,#two:hover,#three:hover,#four:hover,#five:hover,#six:hover
+{
+    color: brown;
+}
+nav a:hover {
+  color: #000;
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: relative;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+.details {
+  display: grid;
+  grid-template-columns: 200px 200px; 
+  grid-template-rows: 250px;
+  grid-column-gap: 5px;
+  top:200px;
+	bottom: 0;
+	left: 400px;
+	right: 0;
+  position: absolute;
+  width: 450px;
+  height:280px;
+  background-color: rgb(138, 224, 201);
+  border-radius: 5px;
+}
+
+
+.personaldetails{
+  left: 50%;
+  top: 15px;
+  left:20px;
+  right: 0;
+  bottom: 0;
+  position: relative;
+
+}
+
+#A:hover{
+ background-color: whitesmoke;
+}
+
+#A{
+  background-color: deepskyblue;
+  border-radius: 5px;
+}
+
+#B{
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+#B:hover{
+  background-color: antiquewhite;
+}
+.C{
+  top:80px;
+  left: 590px;
+  position: relative;
+}
+
+.clear:after {
+  clear: both;
+  display: table;
+  content: "";
+}
+
+
+#name_label,#dob_label,#team_label,#clubpts_label,#wins_label,#losses_label,#draws_label
+{
+    display: inline-box;
+    float: left;
+    position: relative;
+}
+
