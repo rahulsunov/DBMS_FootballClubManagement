@@ -1,0 +1,66 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/matchhistory.css">
+        <title>Player Page</title>
+    </head>
+    <body id="b">
+        <header>
+            <h4>Football Club</h4>
+           <nav>
+               <ul>
+                   <li>
+                       <a id="one" href="/Player">Profile</a>
+                   </li>
+                   <li>
+                       <a id="two" href="/Player/UpcomingMatches">Upcoming Matches</a>
+                   </li>
+                   <li>
+                       <a id="three" href="/Player/MatchHistory">Match History</a>
+                   </li>
+                   <li>
+                       <a id="four" href="/PLayer/CoachDetails">Coach Info</a>
+                   </li>
+               </ul>
+           </nav>
+       </header>
+       <table id="hist">
+         <thead>
+           <tr>
+               <th>Match No.</th>
+               <th>Season No.</th>
+               <th>Match Manager No.</th>
+               <th>Contact Details</th>
+               <th>Ground Name</th>
+               <th>My Position</th>
+               <th>Opponent</th>
+               <th>Status</th>
+               <th>My Team</th>
+               <th>Date of Match</th>
+           </tr>
+        </thead>
+        <tbody>
+            <% for(var i=0; i < r1.length; i++) { %>
+               <tr id="tohover">
+                 <td><%= r1[i].MATCH_ID %></td>
+                 <td><%= r1[i].SEASON_NO %></td>
+                 <td><%= r1[i].EMPLOYEE_ID %></td>
+                 <td><%= r1[i].CONTACT %></td>
+                 <td><%= r1[i].GROUND %></td>
+                 <td><%= r1[i].POSITION %></td>
+                 <td><%= r1[i].OPPONENT %></td>
+                 <% if(r1[i].STATUS === "Won"){ %>
+                 <td class="Won"><strong><%= r1[i].STATUS %></strong></td>
+                 <%} else {%>
+                 <td class="Lost"><strong><%= r1[i].STATUS %></strong></td>
+                 <% } %>
+                 <td><%= r1[i].TEAM_NAME %></td>
+                 <td><%= r1[i].DATE_OF_MATCH %></td>
+               </tr>
+            <% } %>
+        </tbody>
+        </table>
+    </body>
+</html>
