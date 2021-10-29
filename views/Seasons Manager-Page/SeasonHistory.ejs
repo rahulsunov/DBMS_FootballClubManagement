@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/upcomingmatches.css">
+        <title>Upcoming Matches</title>
+    </head>
+    <body>
+        <header>
+            <h4>Football Club</h4>
+           <nav>
+               <ul>
+                   <li>
+                       <a id="one" href="/Seasons_Manager">Profile</a>
+                   </li>
+                   <li>
+                       <a id="two" href="/Seasons_Manager/UpcomingSeasons">Upcoming Seasons</a>
+                   </li>
+                   <li>
+                       <a id="three" href="/Seasons_Manager/SeasonHistory">Seasons History</a>
+                   </li>
+                   <li>
+                       <a id="four" href="/Seasons_Manager/OngoingSeasons">Ongoing Seasons</a>
+                   </li>
+               </ul>
+           </nav>
+       </header>
+       <table id="hist">
+        <thead>
+          <tr>
+              <th>Season No.</th>
+              <th>Season Name</th>
+              <th>Begin Date</th>
+              <th>End Date</th>
+          </tr>
+       </thead>
+       <tbody>
+           <% for(var i=0; i < s1.length; i++) { %>
+              <tr id="tohover">
+                <td><%= s1[i].SEASON_NO %></td>
+                <td><%= s1[i].SEASON_NAME %></td>
+                <td><%= s1[i].BEGIN_DATE %></td>
+                <td><%= s1[i].END_DATE %></td>
+              </tr>
+           <% } %>
+       </tbody>
+       </table>
+    </body>
+</html>
