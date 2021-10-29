@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/css/DBA.css">
+    <link rel="stylesheet" type="text/css" href="/css/Delete.css">
+    <title>DBA Page</title>
+    </head>
+    <body>
+     <header>
+         <h4>Football Club</h4>
+        <nav>
+            <ul>
+                <li>
+                    <a id="one" href="/DBA">Home</a>
+                </li>
+                <li>
+                    <a id="two" href="/DBA/insert">Insertion</a>
+                </li>
+                <li>
+                    <a id="three" href="/DBA/delete">Deletion</a>
+                </li>
+                <li>
+                    <a id="four" href="/DBA/update">Updation</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        function addcondition(that)
+        {
+          const operators =['>','<','>=','<=','=','<>','IN','NOT IN','LIKE','NOT LIKE'];
+          const logic = ['AND','OR'];
+          const EntityAndAttributes = {
+              "Authorisation" : ['Username','Password','Occupation'],
+              "Team" : ['Team_Name','Wins','Losses','Draws'],
+              "Player" : ['Player_ID','FirstName','MiddleName','LastName','DOB','Position','Team_Name','Clubpts'],
+              "Player_MobileNo" : ['Player_ID','MobileNo'],
+              "Player_EmailID" : ['Player_ID','EmailID'],
+              "Coach" : ['Coach_ID','FirstName','MiddleName','LastName','DOB','Position','Team_Name','Clubpts'],
+              "Coach_MobileNo" : ['Coach_ID','MobileNo'],
+              "Coach_EmailID" : ['Coach_ID','EmailID'],
+              "Employee" : ['Employee_ID','FirstName','MiddleName','LastName','DOB','Occupation','Clubpts'],
+              "Employee_MobileNo" : ['Employee_ID','MobileNo'],
+              "Employee_EmailID" : ['Employee_ID','EmailID'],
+              "Match" : ['Match_ID','Date_of_Match','Winner','Ground','Season_No','Employee_ID'],
+              "Match_Management" : ['Match_ID','Team','Score'],
+              "Ground" : ['GroundName','Country','State','City','No_of_Seats'],
+              "Medical_Aid" : ['Medical_ID','Name','Purpose','Available_Quantity'],
+              "Medical_Aid_Distribution" : ['Medicine_ID','GroundName'],
+              "Sports_Equipments" : ['Equipment_ID','Name','Ordered_Quantity','Available_Quantity'],
+              "Sports_Equipments_Distribution" : ['Equipment_ID','GroundName'],
+              "Sponsor" :['Sponsor_ID','Sponsor_Name'],
+              "Sponsor_Match":['Sponsor_ID','Match_ID'],
+              "Sponsor_Team":['Sponsor_ID','Team_ID'],
+          };
+          let tableName=that.value;
+          let a = EntityAndAttributes[tableName];
+          let atable = document.getElementById('C');
+          let aselectBox = document.createElement('select');
+          aselectBox.name = tableName+"_Attributes";
+          aselectBox.innerHTML="<option disabled selected hidden>Choose the attribute</option>"
+          let oselectBox = document.createElement('select');
+          oselectBox.name = "conditions";
+          oselectBox.innerHTML="<option disabled selected hidden>Choose the operator</option>"
+          for(const i of a)
+          {
+              let option = document.createElement('option');
+              //option.innerHTML="<option value='Choose the attribute' disabled selected hidden>Choose the table</option>"
+              option.value = i;
+              option.text= i;
+              aselectBox.appendChild(option);
+          }
+          for(const i of operators)
+          {
+              let option = document.createElement('option');
+              option.value = i;
+              option.text= i;
+              oselectBox.appendChild(option);
+          }
+          let val = document.createElement('input');
+          val.name="Values";
+          let lselect = document.createElement('select');
+          lselect.name="logical";
+          lselect.innerHTML="<option disabled selected hidden>Choose the logical operator</option>";
+          for(const i of logic)
+          {
+              let option = document.createElement('option');
+              option.value = i;
+              option.text= i;
+              lselect.appendChild(option);
+          }
+          val.type = 'text';
+          val.placeholder='Enter a value';
+          let row = atable.insertRow(-1);
+          let newcell1 = row.insertCell(0);
+          let newcell2 = row.insertCell(1);
+          let newcell3 = row.insertCell(2);
+          let newcell4 = row.insertCell(3);
+          newcell1.appendChild(aselectBox);
+          newcell2.appendChild(oselectBox);
+          newcell3.appendChild(val);
+          newcell4.appendChild(lselect);
+        }
+        function refresh()
+        {
+            let atable = document.getElementById('C');
+            atable.innerHTML="<caption>Give the conditions for deletion</caption>";
+        }
+    </script>
+  <div class="form">
+    <form action="/DBA/delete" name="form" method="POST">
+        <select id="Table_choice" name="todo" onchange="refresh();addcondition(this);" required>
+            <option value="" disabled selected hidden>Choose the table</option>
+            <option>Authorisation</option>
+            <option>Ground</option>
+            <option>Player</option>
+            <option>Player_MobileNo</option>
+            <option>Player_EmailID</option>
+            <option>Team</option>
+            <option>Seasons</option>
+            <option>Match</option>
+            <option>Match_Management</option>
+            <option>Coach</option>
+            <option>Coach_MobileNo</option>
+            <option>Coach_EmailID</option>
+            <option>Employee</option>
+            <option>Employee_MobileNo</option>
+            <option>Employee_EmailID</option>
+            <option>Sports_Equipments</option>
+            <option>Sports_Equipments_Distribution</option>
+            <option>Medical_Aid</option>
+            <option>Medical_Aid_Distribution</option>
+            <option>Sponsor</option>
+            <option>Sponsor_Match</option>
+            <option>Sponsor_Team</option>
+        </select>
+        <table id='C'>
+
+        </table>
+        <div class="buttons">
+          <button class="add" type="button" onclick="addcondition(document.getElementById('Table_choice'))">Add Condition</button>
+          <button class="execute" type="submit">Proceed</button>
+        </div>
+    </form>
+    </div>
+    </body>
+</html>

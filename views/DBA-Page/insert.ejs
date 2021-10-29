@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="/css/Insert.css">
+        <title>Insertion</title>
+        
+    </head>
+    <body>
+        <script>
+            function give(that)
+            {
+                var options = document.getElementById("Table_choice").options;
+                //console.log(that.value)
+                if(that.value!="")
+                {
+                    document.getElementById(that.value).style.display = "block";
+                    //console.log(options.length);
+                    for(var i=1;i<options.length;i++)
+                    {
+                      if(that.value!=options[i].value && options[i].value!="")
+                      {
+                        document.getElementById(options[i].value).style.display = "none";
+                      }
+                    }
+                }
+    
+            }
+        </script>
+        <header>
+            <h4>Football Club</h4>
+        <nav>
+            <ul>
+                <li>
+                    <a id="one" href="/DBA">Home</a>
+                </li>
+                <li>
+                    <a id="two" href="/DBA/insert">Insertion</a>
+                </li>
+                <li>
+                    <a id="three" href="/DBA/delete">Deletion</a>
+                </li>
+                <li>
+                    <a id="four" href="/DBA/update">Updation</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+        <form action="/DBA/insert" name="form" method="POST">
+            <select id="Table_choice" name="todo" onchange="give(this);" required>
+                <option value="" disabled selected hidden>Choose the table</option>
+                <option>Authorisation</option>
+                <option>Ground</option>
+                <option>Player</option>
+                <option>Player_MobileNo</option>
+                <option>Player_EmailID</option>
+                <option>Team</option>
+                <option>Seasons</option>
+                <option>Match</option>
+                <option>Match_Management</option>
+                <option>Coach</option>
+                <option>Coach_MobileNo</option>
+                <option>Coach_EmailID</option>
+                <option>Employee</option>
+                <option>Employee_MobileNo</option>
+                <option>Employee_EmailID</option>
+                <option>Sports_Equipments</option>
+                <option>Sports_Equipments_Distribution</option>
+                <option>Medical_Aid</option>
+                <option>Medical_Aid_Distribution</option>
+                <option>Sponsor</option>
+                <option>Sponsor_Match</option>
+                <option>Sponsor_Team</option>
+            </select>
+            <div id="Team" style="display: none;">
+              <div class="Team_Name">
+                <label class="Team_Name_Label" for="Team_Name">Team Name</label>
+                <input class="T" type="text" name="Team_Name" placeholder="Team_Name">
+             </div>
+             <div class="Wins">
+                <label class="Wins_Label" for="Wins">Wins</label>
+                <input class="W" type="text" name="Wins" placeholder="Wins">
+             </div>
+             <div class="Losses">
+                <label class="Losses_Label" for="Losses">Losses</label>
+                <input class="L" type="text" name="Losses" placeholder="Losses">
+             </div>
+             <div class="Draws">
+                <label class="Draws_Label" for="Draws">Draws</label>
+                <input class="D" type="text" name="Draws" placeholder="Draws">
+             </div>
+            </div>
+            <div id="Authorisation" style="display: none;">
+             <div class="Username">
+                <label class="Username_Label" for="Username">Username</label>
+                <input class="U" type="text" name="Username" placeholder="Username">
+             </div>
+             <div class="Password">
+                <label class="Password_Label" for="Password">Password</label>
+                <input class="P" type="text" name="Password" placeholder="Password">
+             </div>
+             <div class="Occupation">
+                <label class="Occupation_Label" for="Occupation">Occupation</label>
+                <input class="O" type="text" name="Occupation" placeholder="Occupation">
+             </div>
+            </div>
+            <div id="Ground" style="display: none;">
+              <div class="GroundName">
+                <label class="Ground_Name_Label" for="Ground_Name">Ground name</label>
+                <input class="Ground_Name" type="text" name="Ground_Name" placeholder="Ground_Name">
+              </div>
+              <div class="GCountry">
+                <label class="Country_Label" for="Country">Country</label>
+                <input class="Country" type="text" name="Country" placeholder="Country">
+              </div>
+              <div class="GState">
+                <label class="State_Label" for="State">State</label>
+                <input class="State" type="text" name="State" placeholder="State">
+              </div>
+              <div class="GCity">
+                <label class="City_Label" for="City">City</label>
+                <input class="City" type="text" name="City" placeholder="City">
+              </div>
+              <div class="Noofseats">
+                <label class="No_of_seats_Label" for="No_of_seats">Number of seats</label>
+                <input class="No_of_seats" type="text" name="No_of_seats" placeholder="Number of seats">
+              </div>
+            </div>
+            <div id="Coach" style="display: none;">
+             <div class="A">
+              <div class="CoachID">
+                <label class="CID_Label" for="CID">Coach ID</label>
+                <input class="CID" type="text" name="CID" placeholder="Coach_ID">
+              </div>
+              <div class="C_First_Name">
+                <label class="CFirstName_Label" for="CFirstName">First name</label>
+                <input class="CFirstName" type="text" name="CFirstName" placeholder="FirstName">
+              </div>
+              <div class="C_Middle_Name">
+                <label class="CMiddleName_Label" for="CMiddleName">Middle name</label>
+                <input class="CMiddleName" type="text" name="CMiddleName" placeholder="MiddleName">
+              </div>
+              <div class="C_Last_Name">
+                <label class="CLastName_Label" for="CLastName">Last name</label>
+                <input class="CLastName" type="text" name="CLastName" placeholder="LastName">
+              </div>
+             </div>
+             <div class="B">
+              <div class="C_DOB">
+                <label class="CDOB_Label" for="CDOB">Date of Birth</label>
+                <input class="CDOB" type="text" name="CDOB" placeholder="Date of Birth">
+              </div>
+              <div class="C_Team_Name">
+                <label class="CTeam_Name_Label" for="CTeam_Name">Team</label>
+                <input class="CTeam_Name" type="text" name="CTeam_Name" placeholder="Team_Name">
+              </div>
+              <div class="C_Clubpts">
+                <label class="CClubpts_Label" for="CClubpts">Club Points</label>
+                <input class="CClubpts" type="text" name="CClubpts" placeholder="Club Points">
+              </div>
+              <div class="C_Username">
+                <label class="CUsername_Label" for="CUsername">Username</label>
+                <input class="CUsername" type="text" name="CUsername" placeholder="Username">
+              </div>
+             </div>
+            </div>
+            <div id="Player" style="display: none;">
+            <div class="A">
+             <div class="PlayerID">
+                <label class="Player_ID_Label" for="PID">Player ID</label>
+                <input class="PID" type="text" name="PID" placeholder="Player_ID">
+             </div>
+             <div class="P_First_Name">
+                <label class="PFirstName_Label" for="PFirstName">First name</label>
+                <input class="PFirstName" type="text" name="PFirstName" placeholder="FirstName">
+             </div>
+             <div class="P_Middle_Name">
+                <label class="PMiddleName_Label" for="PMiddleName">Middle name</label>
+                <input class="PMiddleName" type="text" name="PMiddleName" placeholder="MiddleName">
+             </div>
+             <div class="P_Last_Name">
+                <label class="PLastName_Label" for="PLastName">Last name</label>
+                <input class="PLastName" type="text" name="PLastName" placeholder="LastName">
+             </div>
+            </div>
+            <div class="B">
+             <div class="P_DOB">
+                <label class="PDOB_Label" for="PDOB">Date of Birth</label>
+                <input class="PDOB" type="text" name="PDOB" placeholder="Date of Birth">
+             </div>
+             <div class="position">
+                <label class="Position_Label" for="Position">Position</label>
+                <input class="Position" type="text" name="Position" placeholder="Position">
+             </div>
+             <div class="P_Team_Name">
+                <label class="PTeam_Name_Label" for="PTeam_Name">Team</label>
+                <input class="PTeam_Name" type="text" name="PTeam_Name" placeholder="Team_Name">
+             </div>
+             <div class="P_Clubpts">
+                <label class="PClubpts_Label" for="PClubpts">Club Points</label>
+                <input class="PClubpts" type="text" name="PClubpts" placeholder="Club Points">
+             </div>
+             <div class="P_Username">
+                <label class="PUsername_Label" for="PUsername">Username</label>
+                <input class="PUsername" type="text" name="PUsername" placeholder="Username">
+             </div>
+            </div>
+            </div>
+            <div id="Employee" style="display: none;">
+            <div class="A">
+              <div class="EmployeeID">
+                  <label class="EID_Label" for="EID">Employee ID</label>
+                <input class="EID" type="text" name="EID" placeholder="Employee_ID">
+              </div>
+              <div class="E_First_Name">
+                <label class="EFirstName_Label" for="EFirstName">First name</label>
+                <input class="EFirstName" type="text" name="EFirstName" placeholder="FirstName">
+              </div>
+              <div class="E_Middle_Name">
+                <label class="EMiddleName_Label" for="EMiddleName">Middle name</label>
+                <input class="EMiddleName" type="text" name="EMiddleName" placeholder="MiddleName">
+              </div>
+              <div class="E_Last_Name">
+                <label class="ELastName_Label" for="ELastName">Last name</label>
+                <input class="ELastName" type="text" name="ELastName" placeholder="LastName">
+              </div>
+            </div>
+            <div class="B">
+              <div class="E_DOB">
+                <label class="EDOB_Label" for="EDOB">Date of Birth</label>
+                <input class="EDOB" type="text" name="EDOB" placeholder="Date of Birth">
+              </div>
+              <div class="E_Occupation">
+                <label class="EOccupation_Label" for="EOccupation">Occupation</label>
+                <input class="EOccupation" type="text" name="EOccupation" placeholder="Occupation">
+              </div>
+              <div class="E_Clubpts">
+                <label class="EClubpts_Label" for="EClubpts">Club Points</label>
+                <input class="EClubpts" type="text" name="EClubpts" placeholder="Club Points">
+              </div>
+              <div class="E_Username">
+                <label class="EUsername_Label" for="EUsername">Username</label>
+                <input class="EUsername" type="text" name="EUsername" placeholder="Username">
+              </div>
+            </div>
+            </div>
+            <div id="Employee_EmailID" style="display: none;">
+             <div class="EEmployee_ID">
+                <label class="EEID_Label" for="EEID">Employee ID</label>
+                <input class="EEID" type="text" name="EEID" placeholder="Employee_ID">
+             </div>
+             <div class="EEmailID">
+                <label class="EEmailID_Label" for="EEmailID">Email ID</label>
+                <input class="EmEmailID" type="text" name="EEmailID" placeholder="EmailID">
+             </div>
+            </div>
+            <div id="Employee_MobileNo" style="display: none;">
+              <div class="MEmployee_ID">
+                <label class="MEmID_Label" for="MEmID">Employee ID</label>
+                <input class="MEmID" type="text" name="MEmID" placeholder="Employee_ID">
+              </div>
+              <div class="EMobileNo">
+                <label class="EMobileNo_Label" for="EMobileNo">Mobile Number</label>
+                <input class="EmMobileNo" type="text" name="EMobileNo" placeholder="MobileNo">
+              </div>
+            </div>
+            <div id="Player_EmailID" style="display: none;">
+              <div class="EPlayer_ID">
+                <label class="EPID_Label" for="EPID">Player ID</label>
+                <input class="EPID" type="text" name="EPID" placeholder="Player_ID">
+              </div>
+              <div class="PEmail_ID">
+                <label class="PEmailID_Label" for="PEmailID">Email ID</label>
+                <input class="PEmailID" type="text" name="PEmailID" placeholder="EmailID">
+              </div>
+            </div>
+            <div id="Player_MobileNo" style="display: none;">
+              <div class="MPlayer_ID">
+                <label class="MPID_Label" for="MPID">Player ID</label>
+                <input class="MPID" type="text" name="MPID" placeholder="Player_ID">
+              </div>
+              <div class="PMobile_No">
+                <label class="PMobileNo_Label" for="PMobileNo">Mobile Number</label>
+                <input class="PMobileNo" type="text" name="PMobileNo" placeholder="MobileNo">
+              </div>
+            </div>
+            <div id="Coach_EmailID" style="display: none;">
+              <div class="ECoach_ID">
+                <label class="ECID_Label" for="ECID">Coach ID</label>
+                <input class="ECID" type="text" name="ECID" placeholder="Coach_ID">
+              </div>
+              <div class="CEmail_ID">
+                <label class="CEmailID_Label" for="CEmailID">Email ID</label>
+                <input class="CEmailID" type="text" name="CEmailID" placeholder="EmailID">
+              </div>
+            </div>
+            <div id="Coach_MobileNo" style="display: none;">
+              <div class="MCoach_ID">
+                <label class="MCID_Label" for="MCID">Coach ID</label>
+                <input class="MCID" type="text" name="MCID" placeholder="Coach_ID">
+              </div>
+              <div class="CMobile_No">
+                <label class="MMobileNo_Label" for="CMobileNo">Mobile Number</label>
+                <input class="CMobileNo" type="text" name="CMobileNo" placeholder="MobileNo">
+              </div>
+            </div>
+            <div id="Match" style="display: none;">
+               <div class="MatchID">
+                <label class="MID_Label" for="MID">Match ID</label>
+                <input class="MID" type="text" name="MID" placeholder="Match_ID">
+               </div>
+               <div class="DOM">
+                <label class="dom_Label" for="dom">Date of Match</label>
+                <input class="dom" type="text" name="dom" placeholder="Date of Match">
+               </div>
+               <div class="M_Winner">
+                <label class="MWinner_Label" for="MWinner">Winner of the Match</label>
+                <input class="MWinner" type="text" name="MWinner" placeholder="Winner">
+               </div>
+               <div class="MGround">
+                <label class="Ground_Label" for="Ground">Venue Ground</label>
+                <input class="Ground" type="text" name="Ground" placeholder="Ground">
+               </div>
+               <div class="msno">
+                <label class="MSNO_Label" for="MSNO">Season Number</label>
+                <input class="MSNO" type="text" name="MSNO" placeholder="Season Number">
+               </div>
+               <div class="meid">
+                <label class="MEID_Label" for="MEID">Allocated Match Manager</label>
+                <input class="MEID" type="text" name="MEID" placeholder="Match Manager">
+               </div>
+            </div>
+            <div id="Seasons" style="display: none;">
+              <div class="S_NO">
+                <label class="SNO_Label" for="SNO">Season Number</label>
+                <input class="SNO" type="text" name="SNO" placeholder="Season Number">
+              </div>
+              <div class="S_Name">
+                <label class="SName_Label" for="SName">Season Name</label>
+                <input class="SName" type="text" name="SName" placeholder="Season Name">
+              </div>
+              <div class="B_date">
+                <label class="Bdate_Label" for="Bdate">Begin Date</label>
+                <input class="Bdate" type="text" name="Bdate" placeholder="Begin Date">
+              </div>
+              <div class="E_date">
+                <label class="Edate_Label" for="Edate">End Date</label>
+                <input class="Edate" type="text" name="Edate" placeholder="End Date">
+              </div>
+              <div class="S_Winner">
+                <label class="SWinner_Label" for="SWinner">Winner of the Season</label>
+                <input class="SWinner" type="text" name="SWinner" placeholder="Winner">
+              </div>
+              <div class="seid">
+                <label class="SEID_Label" for="SEID">Allocated Seasons Manager</label>
+                <input class="SEID" type="text" name="SEID" placeholder="Season Manager">
+              </div>
+            </div>
+            <div id="Match_Management" style="display: none;">
+              <div class="mmid">
+                <label class="MMID_Label" for="MMID">Match ID</label>
+                <input class="MMID" type="text" name="MMID" placeholder="Match ID">
+              </div>
+              <div class="M_Team">
+                <label class="MTeam_Label" for="MTeam">Team Name</label>
+                <input class="MTeam" type="text" name="MTeam" placeholder="Team Name">
+              </div>
+              <div class="score">
+                <label class="Score_Label" for="Score">Score</label>
+                <input class="Score" type="text" name="Score" placeholder="Score">
+              </div>
+            </div>
+            <div id="Sponsor" style="display: none;">
+              <div class="sid">
+                <label class="SID_Label" for="SID">Sponsor ID</label>
+                <input class="SID" type="text" name="SID" placeholder="Sponsor ID">
+              </div>
+              <div class="Sp_Name">
+                <label class="SpName_Label" for="SpName">Sponsor Name</label>
+                <input class="SpName" type="text" name="SpName" placeholder="Sponsor Name">
+              </div>
+            </div>
+            <div id="Sponsor_Match" style="display: none;">
+              <div class="msid">
+                <label class="MSID_Label" for="MSID">Sponsor ID</label>
+                <input class="MSID" type="text" name="MSID" placeholder="Sponsor ID">
+              </div>
+              <div class="match">
+                <label class="Match_Label" for="Match">Match ID</label>
+                <input class="Match" type="text" name="Match" placeholder="Match ID">
+              </div>
+            </div>
+            <div id="Sponsor_Team" style="display: none;">
+              <div class="ssid">
+                <label class="SSID_Label" for="SSID">Sponsor ID</label>
+                <input class="SSID" type="text" name="SSID" placeholder="Sponsor ID">
+              </div>
+              <div class="S_Team">
+                <label class="STeam_Label" for="STeam">Team Name</label>
+                <input class="STeam" type="text" name="STeam" placeholder="Team Name">
+              </div>
+            </div>
+            <div id="Medical_Aid" style="display: none;">
+              <div class="Med_ID">
+                <label class="MedID_Label" for="MedID">Medicine ID</label>
+                <input class="MedID" type="text" name="MedID" placeholder="Medicine ID">
+              </div>
+              <div class="Med_Name">
+                <label class="MedName_Label" for="MedName">Medicine Name</label>
+                <input class="MedName" type="text" name="MedName" placeholder="Medicine Name">
+              </div>
+              <div class="Med_Pur">
+                <label class="MedPur_Label" for="MedPur">Medicine Purpose</label>
+                <input class="MedPur" type="text" name="MedPur" placeholder="Medicine Purpose">
+              </div>
+              <div class="M_AQuantity">
+                <label class="MAQuantity_Label" for="MAQuantity">Available Quantity</label>
+                <input class="MAQuantity" type="text" name="MAQuantity" placeholder="Available Quantity">
+              </div>
+            </div>
+            <div id="Medical_Aid_Distribution" style="display: none;">
+              <div class="D_MedID">
+                <label class="DMedID_Label" for="DMedID">Medicine ID</label>
+                <input class="DMedID" type="text" name="DMedID" placeholder="Medicine ID">
+              </div>
+              <div class="M_Ground_Name">
+                <label class="MGroundName_Label" for="MGroundName">Ground Name</label>
+                <input class="MGroundName" type="text" name="MGroundName" placeholder="Ground Name">
+              </div>
+            </div>
+            <div id="Sports_Equipments" style="display: none;">
+              <div class="Eq_ID">
+                <label class="EqID_Label" for="EqID">Equipment ID</label>
+                <input class="EqID" type="text" name="EqID" placeholder="Equipment ID">
+              </div>
+              <div class="E_Name">
+                <label class="EName_Label" for="EName">Equipment Name</label>
+                <input class="EName" type="text" name="EName" placeholder="Equipment Name">
+              </div>
+              <div class="O_Quantity">
+                <label class="OQuantity_Label" for="OQuantity">Ordered Quantity</label>
+                <input class="OQuantity" type="text" name="OQuantity" placeholder="Ordered Quantity">
+              </div>
+              <div class="S_AQuantity">
+                <label class="SAQuantity_Label" for="SAQuantity">Available Quantity</label>
+                <input class="SAQuantity" type="text" name="SAQuantity" placeholder="Available Quatity">
+              </div>
+            </div>
+            <div id="Sports_Equipments_Distribution" style="display: none;">
+              <div class="D_EqID">
+                <label class="DEqID_Label" for="DEqID">Equipment ID</label>
+                <input class="DEqID" type="text" name="DEqID" placeholder="Equipment ID">
+              </div>
+              <div class="S_Ground_Name">
+                <label class="SGroundName_Label" for="SGroundName">Ground Name</label>
+                <input class="SGroundName" type="text" name="SGroundName" placeholder="Ground Name">
+              </div>
+            </div>
+            <button class="execute" type="submit" onended="outcomes()">Proceed</button>
+        </form>
+
+    </body>
+</html>
