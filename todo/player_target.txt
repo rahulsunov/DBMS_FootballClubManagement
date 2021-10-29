@@ -1,0 +1,13 @@
+1. Making a navigation bar with good CSS
+2. Components of navigation bar 
+   a. Homepage 
+   b. Player Profile
+   c. Matches played by the players i)History ii)Upcoming(with Organisers)
+   d. Seasons played by the players i)History ii)Upcoming(With organisers)
+   e. Details of the Team in which the player is in.(Including Sponsors)
+   f. Details of the Team Coach as in Name and MobileNo
+Every webpage will have the footer with these Details
+CSE2004-DBMS
+Group Members : Rahul,Shivam and Me 
+Winter Semester 2020-2021
+Made by Gaurav Pendharkar
